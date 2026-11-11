@@ -1,0 +1,20 @@
+# Large container images
+containers/*.img
+containers/*.sif
+
+# Generated files
+logs/
+results/
+
+# Large data
+datasets/
+checkpoints/
+
+# Python generated files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Nested Git repositories
+third_party/**/.git
