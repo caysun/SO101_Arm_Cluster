@@ -1,0 +1,36 @@
+SO101 Engaging - Environment Information
+==========================================
+
+Date: 2026-11-11T13:28:21-05:00
+
+CONTAINER
+---------
+Image: /home/caysun/isaac-lab_2.3.2.sif
+Base: nvcr.io/nvidia/isaac-lab:2.3.2
+OS: Ubuntu 24.04
+Isaac Sim: 5.0.0 (verify from VERSION file)
+Isaac Lab: 2.3.2
+
+PYTHON ENVIRONMENT
+------------------
+Interpreter: /isaac-sim/python.sh
+Python: 3.11.13 (tags/v3.11.13-dirty:498b971, Jun  9 2025, 16:37:36) [GCC 7.3.1 20180303 (Red Hat 7.3.1-5)]
+PyTorch: 2.7.0+cu128
+CUDA: 12.8
+CUDA available: False
+
+APPTAINER
+---------
+apptainer version 1.4.5-3.el8
+
+OVERLAY
+-------
+Path: /home/caysun/projects/so101-engaging/containers/ubuntu22_overlay.img
+
+-rw------- 1 caysun caysun 79G Nov 11 13:16 containers/ubuntu22_overlay.img
+532047ee095ba3c511b1a6bc8217f9f4c1c219e17b6e6d5e25e06f23fb690dc1  containers/ubuntu22_overlay.img
+
+DEPENDENCIES
+------------
+Full pip freeze snapshot: setup/requirements.txt
+Package count: 246
