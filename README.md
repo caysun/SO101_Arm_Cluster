@@ -75,30 +75,7 @@ The expected location is:
 
 **Important:** The SIF image is not stored in GitHub because of its size.
 
-## 4. Overlay Image
-
-The project also contains an Apptainer overlay:
-
-```text
-containers/ubuntu22_overlay.img
-```
-
-The overlay provides additional writable filesystem storage for container environments.
-
-If your workflow requires the overlay, ensure you use the team's shared copy and follow the corresponding container launch instructions.
-
-Example:
-
-```bash
-apptainer exec \
-    --overlay containers/ubuntu22_overlay.img:ro \
-    <CONTAINER_IMAGE> \
-    bash
-```
-
-Note that the Ubuntu 22.04 overlay and Ubuntu 24.04 Isaac Lab image are separate artifacts. Do not assume they are interchangeable or compatible without checking the intended workflow.
-
-## 5. Launch the Isaac Lab Environment
+## 4. Launch the Isaac Lab Environment
 
 From the project root:
 
@@ -127,7 +104,7 @@ Isaac Lab is located at:
 /workspace/isaaclab
 ```
 
-## 6. Python Dependencies
+## 5. Python Dependencies
 
 The complete Python dependency snapshot is stored in:
 
@@ -150,7 +127,7 @@ If you are recreating the Python environment in a compatible container that does
 
 **Important:** If you are using the original Isaac Lab container image, its Python packages may already be installed. Avoid reinstalling the entire dependency list unnecessarily.
 
-## 7. Verify the Environment
+## 6. Verify the Environment
 
 Check Python and PyTorch:
 
@@ -172,14 +149,14 @@ Check that the project is accessible:
 ls /workspace/so101-engaging
 ```
 
-## 8. Environment Documentation
+## 7. Environment Documentation
 
 For additional environment details, see:
 
 - `setup/environment-info.txt` — container, Python, PyTorch, CUDA, and overlay information.
 - `setup/requirements.txt` — complete Python package snapshot.
 
-## 9. Important Notes
+## 8. Important Notes
 
 - Do not commit large `.sif` or `.img` container files to GitHub.
 - Use the team's shared container images rather than independently rebuilding them.
